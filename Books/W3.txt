@@ -1,0 +1,10 @@
+# Basic Questions (1-18) '72'
+# Basic Algorithm (18-29) '75'
+# Variable Type (30-32) '18'
+# Input - Output (33-34) '10'
+# Conditional Statements (34-40) '26'
+# Loop (40-50) '59' [IMPORTANT]
+# Array (51-76) '100' [IMPORTANT]
+# Pointer (77-82) '22' [IMPORTANT]
+# Searching and Sorting Algorithm (82-83) '9' [IMPORTANT]
+# Function (84-85) '11' [IMPORTANT]

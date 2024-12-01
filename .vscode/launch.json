@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Debug with LLDB on iTerm2",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}", 
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb",
+            "terminal": {
+                "kind": "external",
+                "external": {
+                    "path": "open",
+                    "args": [
+                        "-a",
+                        "iTerm",
+                        "${workspaceFolder}"
+                    ]
+                }
+            },
+            "preLaunchTask": "build-clang-lldb"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-clang-lldb",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-g",                              // فعال کردن اطلاعات دیباگ
+                "${file}",                         // فایل فعلی
+                "-o",                              // تعیین خروجی
+                "${fileDirname}/${fileBasenameNoExtension}" // فایل اجرایی
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"], // تحلیل خطاها شبیه GCC
+            "detail": "Compile with Clang for LLDB"
+        }
+    ]
+}

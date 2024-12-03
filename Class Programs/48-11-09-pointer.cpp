@@ -8,12 +8,12 @@ void test1(int x)
 void test2(int* p)
 {
     // *p=100;
-    *p*=100;
+    *p *= 100;
 }
 void test3(int& y)
 {
     // *p=100;
-    y*=100;
+    y *= 100;
 }
 
 void swap(int* p1,int* p2)

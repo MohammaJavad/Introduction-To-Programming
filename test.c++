@@ -14,6 +14,10 @@ int main()
     // int* ptr = &variable;
     // ref+=2;
     // std::cout << variable << "  " << ref << "  " << ptr << std::endl;
-    plusvariable(variable);
-    cout << variable << endl;
+    // plusvariable(variable);
+    // cout << variable << endl;
+
+    // c-style array
+
+    cout << 10/3+1 << endl;
 }

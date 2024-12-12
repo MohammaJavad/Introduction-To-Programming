@@ -2,28 +2,24 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C++ Debug with LLDB",
+            "name": "Debug with LLDB",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}", 
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": true,
             "MIMode": "lldb",
-            "terminal": {
-                "kind": "external",
-                "external": {
-                    "path": "open",
-                    "args": [
-                        "-a",
-                        "iTerm",
-                        "${workspaceFolder}"
-                    ]
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
                 }
-            },
-            "preLaunchTask": "build-clang-lldb"
+            ],
+            "preLaunchTask": "Build with Clang++"
         }
     ]
 }
